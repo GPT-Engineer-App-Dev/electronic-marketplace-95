@@ -3,16 +3,20 @@ import { Box, Heading, SimpleGrid, Image, Text, Button, VStack } from "@chakra-u
 import { Link } from "react-router-dom";
 import { products } from '../data/products';
 import { useCart } from '../context/CartContext';
+import { useSearch } from '../context/SearchContext';
 
 const ProductList = () => {
   const { addToCart } = useCart();
+  const { searchResults } = useSearch();
+
+  const displayProducts = searchResults.length > 0 ? searchResults : products;
 
   return (
     <Box maxWidth="1200px" margin="auto" padding={8}>
       <VStack spacing={8} align="stretch">
         <Heading as="h1" size="2xl" textAlign="center">Our Products</Heading>
         <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10}>
-          {products.map((product) => (
+          {displayProducts.map((product) => (
             <Box key={product.id} borderWidth={1} borderRadius="lg" overflow="hidden">
               <Image src={product.image} alt={product.name} />
               <Box p={6}>
