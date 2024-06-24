@@ -5,7 +5,8 @@ export const products = [
     price: 799.99,
     description: "Latest smartphone with advanced features and 5G capability.",
     image: "https://source.unsplash.com/random/400x300?smartphone",
-    category: "Smartphones"
+    category: "Smartphones",
+    brand: "TechX"
   },
   {
     id: 2,
@@ -13,7 +14,8 @@ export const products = [
     price: 1299.99,
     description: "High-performance laptop for professionals and gamers.",
     image: "https://source.unsplash.com/random/400x300?laptop",
-    category: "Laptops"
+    category: "Laptops",
+    brand: "TechPro"
   },
   {
     id: 3,
@@ -21,7 +23,8 @@ export const products = [
     price: 199.99,
     description: "Premium wireless headphones with noise cancellation.",
     image: "https://source.unsplash.com/random/400x300?headphones",
-    category: "Audio"
+    category: "Audio",
+    brand: "SoundMaster"
   },
   {
     id: 4,
@@ -29,7 +32,8 @@ export const products = [
     price: 699.99,
     description: "55-inch 4K Smart TV with HDR and built-in streaming apps.",
     image: "https://source.unsplash.com/random/400x300?tv",
-    category: "TVs"
+    category: "TVs",
+    brand: "VisionPlus"
   },
   {
     id: 5,
@@ -37,7 +41,8 @@ export const products = [
     price: 129.99,
     description: "True wireless earbuds with long battery life and water resistance.",
     image: "https://source.unsplash.com/random/400x300?earbuds",
-    category: "Audio"
+    category: "Audio",
+    brand: "SoundMaster"
   },
   {
     id: 6,
@@ -45,6 +50,7 @@ export const products = [
     price: 499.99,
     description: "Next-gen gaming console for immersive gaming experiences.",
     image: "https://source.unsplash.com/random/400x300?gaming",
-    category: "Gaming"
+    category: "Gaming",
+    brand: "GameTech"
   }
 ];
